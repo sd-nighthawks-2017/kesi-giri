@@ -48,6 +48,7 @@ GEM
       byebug (~> 9.1)
       pry (~> 0.10)
     public_suffix (3.0.0)
+    puma (3.10.0)
     rack (1.6.8)
     rack-protection (1.5.3)
       rack
@@ -101,6 +102,7 @@ DEPENDENCIES
   faker
   pg
   pry-byebug
+  puma
   rack-test
   rake
   rspec (~> 3.0)
@@ -108,6 +110,9 @@ DEPENDENCIES
   shoulda-matchers
   sinatra (~> 1.0)
   sinatra-contrib
+
+RUBY VERSION
+   ruby 2.2.2p95
 
 BUNDLED WITH
    1.15.4
