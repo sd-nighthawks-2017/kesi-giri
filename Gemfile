@@ -16,15 +16,14 @@ gem 'puma'
 
 gem 'shotgun', '~>0.9.1'
 
-group :test do
+
   gem 'shoulda-matchers'
   gem 'rack-test'
   gem 'rspec', '~>3.0'
   gem 'capybara'
-end
 
-group :test, :development do
+
   gem 'factory_girl'
   gem 'faker'
   gem 'pry-byebug'
-end
+
