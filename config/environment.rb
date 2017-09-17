@@ -15,6 +15,8 @@ require 'puma'
 require 'pg'
 require 'active_record'
 require 'logger'
+require 'dotenv'
+require 'bcrypt'
 
 require 'sinatra'
 require "sinatra/reloader" if development?

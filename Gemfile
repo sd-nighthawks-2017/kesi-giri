@@ -14,6 +14,8 @@ gem 'activerecord', '~>5.1.2'
 gem 'rake'
 gem 'puma'
 gem 'shotgun', '~>0.9.1'
+gem 'dotenv'
+gem 'bcrypt'
 
 
   gem 'shoulda-matchers'
