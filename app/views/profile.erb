@@ -1,0 +1,10 @@
+<h1>Welcome to your recipe book! </h1>
+
+<ul>
+	<% @user.recipes.each do |recipe| %>
+
+	<li>  <%= recipe.name %>	<li>
+
+	<% end %>
+
+</ul>

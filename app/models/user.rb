@@ -1,5 +1,4 @@
 require 'bcrypt'
-require 'uri'
 require 'json'
 require 'net/http'
 
@@ -28,8 +27,8 @@ class User < ActiveRecord::Base
   end
 
   def search(item) 
-    # uri = URI.parse(URI.encode())
-    #api_response = Net::HTTP::Get.new()
+    # uri = URI("") 
+     #api_response = Net::HTTP.get_response(uri)
     #JSON.parse(api_response)
   end
 

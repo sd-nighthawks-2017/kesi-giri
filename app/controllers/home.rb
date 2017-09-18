@@ -44,7 +44,7 @@ post '/register' do
 end
 
 post '/new' do
-  @recipe = Recipe.new(name: params[:recipename])
+  @recipe = Recipe.new(name: params[:recipename], user_id: session[:user_id])
 
   if @recipe.save
     redirect "/recipe/#{@recipe.id}"
@@ -59,3 +59,9 @@ get '/recipe/:id' do
   erb :"/recipes/show"
 end
 
+
+get '/profile/:id' do
+  @user = User.find(params[:id])
+
+  erb :profile
+end

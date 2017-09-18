@@ -4,7 +4,6 @@ get '/ingredients' do
 end
 
 post '/ingredients/:id' do
-
   @ingredient = Ingredient.new(item: params[:ingredients], recipe_id: params[:id])	
 
   if @ingredient.save
